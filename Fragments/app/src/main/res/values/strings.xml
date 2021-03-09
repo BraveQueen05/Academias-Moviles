@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Fragments</string>
+    <string name="switch_btn_text">Cambiar</string>
+
+    <string name="phone_text">Celular</string>
+    <string name="email_text">Email</string>
+    <string name="web_text">Página Web</string>
+
+    <string name="error_listener_impl">Activity must implement IFragmentList</string>
+</resources>
