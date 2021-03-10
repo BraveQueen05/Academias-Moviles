@@ -79,6 +79,7 @@ class FragmentList: Fragment() {
 
     private fun setUpSwitch(list: MutableList<Any>, click: Boolean){
         this.adapter.list = list
+        this.binding.rv.scheduleLayoutAnimation()
         this@FragmentList.listener?.firstItem(this.adapter.list.first())
         this.click = click
     }
