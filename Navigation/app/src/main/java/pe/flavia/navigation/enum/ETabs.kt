@@ -8,6 +8,6 @@ package pe.flavia.navigation.enum
     Solera Mobile
 */
 
-enum class ETabs {
-    FIRST, SECOND, THIRD
+enum class ETabs(val title: String) {
+    FIRST("Web"), SECOND("Shopping"), THIRD("Videos")
 }

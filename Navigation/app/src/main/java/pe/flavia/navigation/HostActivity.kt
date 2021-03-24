@@ -6,6 +6,7 @@ import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.tabs.TabLayoutMediator
 import pe.flavia.navigation.databinding.HostActivityBinding
+import pe.flavia.navigation.enum.ETabs
 import pe.flavia.navigation.fragments.FirstFragment
 import pe.flavia.navigation.fragments.SecondFragment
 import pe.flavia.navigation.fragments.ThirdFragment
@@ -40,7 +41,7 @@ class HostActivity : AppCompatActivity() {
 
     private fun setUpTab(){
         TabLayoutMediator(this.binding.tabLayout, this.binding.vp) { tab, position ->
-            tab.text = "${this.list[position]::class.simpleName}"
+            tab.text = ETabs.values()[position].title
         }.attach()
     }
 }
