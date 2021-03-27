@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Storage</string>
+    <string name="add_book">Agregar nuevo libro</string>
+    <string name="empty_row">Aún no hay libros agregados</string>
+    <string name="enter_book_name">Ingresa el nombre del libro</string>
+    <string name="enter_author_name">Ingresa el nombre del autor</string>
+    <string name="send_text">Enviar</string>
+    <string name="error_enter_field">Ingresar campo</string>
+</resources>
