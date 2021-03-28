@@ -26,5 +26,9 @@ https://docs.google.com/document/d/1XW4FEWTuv82FbhFvjKGePPaq1TogjP6zwVZgF_ln4Xo/
 Tareas opcionales
 
 
-Optional1  : https://docs.google.com/document/d/16-g_8zgP5Kh8ttUd_k9AoN6Wb1_TS4gQuPixV_owkP0/edit?usp=sharing
+Optional1  : 
+https://docs.google.com/document/d/16-g_8zgP5Kh8ttUd_k9AoN6Wb1_TS4gQuPixV_owkP0/edit?usp=sharing
+
+Optional2: 
+https://docs.google.com/document/d/1wEJbeF11H6A7QZkAne3DrGftbgadKnyovGttIvegcII/edit?usp=sharing
 
