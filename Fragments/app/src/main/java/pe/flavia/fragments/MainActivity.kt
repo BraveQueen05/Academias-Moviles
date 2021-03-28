@@ -18,17 +18,20 @@ import pe.flavia.fragments.utils.VEGETABLE_DETAIL_FRAGMENT
 class MainActivity : AppCompatActivity(), FragmentList.IFragmentList {
 
     private lateinit var binding: ActivityMainBinding
-    private lateinit var vegetableDetailFragment: FragmentVegetableDetail
-    private lateinit var userDetailFragment: FragmentUserDetail
+    private var vegetableDetailFragment = FragmentVegetableDetail()
+    private var userDetailFragment = FragmentUserDetail()
 
     private var fragmentList: FragmentList? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        bind()
+        assignFragments()
+    }
+
+    private fun bind(){
         this.binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(this.binding.root)
-
-        assignFragments()
     }
 
     private fun assignFragments() {
@@ -44,7 +47,6 @@ class MainActivity : AppCompatActivity(), FragmentList.IFragmentList {
     }
 
     private fun vegetableDetailFragment(item: Vegetable) {
-        this.vegetableDetailFragment = FragmentVegetableDetail()
         vegetableDetailFragment.arguments = bundleOf(VEGETABLE to item)
         supportFragmentManager.beginTransaction().apply {
             setCustomAnimations(android.R.anim.fade_in,android.R.anim.fade_out)
@@ -54,7 +56,6 @@ class MainActivity : AppCompatActivity(), FragmentList.IFragmentList {
     }
 
     private fun userDetailFragment(item: User){
-        this.userDetailFragment = FragmentUserDetail()
         userDetailFragment.arguments = bundleOf(USER to item)
         supportFragmentManager.beginTransaction().apply {
             setCustomAnimations(android.R.anim.fade_in,android.R.anim.fade_out)

@@ -60,12 +60,6 @@ class FragmentList: Fragment() {
         this.adapter.apply {
             this.list = EVegetables.getVegetablesList().toMutableList()
             this@FragmentList.listener?.firstItem(this.list.first())
-            this.onStoreCardClickAction = {
-                this@FragmentList.listener?.showDetail(it)
-            }
-            this.onUserCardClickAction = {
-                this@FragmentList.listener?.showDetail(it)
-            }
         }
     }
 
@@ -74,6 +68,13 @@ class FragmentList: Fragment() {
             scrollToTop()
             if (!this.click) setUpSwitch(EUser.getUsersList().toMutableList(), true)
             else setUpSwitch(EVegetables.getVegetablesList().toMutableList(), false)
+        }
+
+        this.adapter.onStoreCardClickAction = {
+            this@FragmentList.listener?.showDetail(it)
+        }
+        this.adapter.onUserCardClickAction = {
+            this@FragmentList.listener?.showDetail(it)
         }
     }
 
