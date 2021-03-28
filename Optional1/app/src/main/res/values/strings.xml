@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Optional1</string>
+    <string name="btn_home_text">Home</string>
+    <string name="btn_home2_text">Home 2</string>
+    <string name="btn_form_text">Formulario</string>
+    <string name="db_title">Dropbox</string>
+    <string name="btn_db_user_text">I\'m already a Dropbox user</string>
+    <string name="btn_db_new_user_text">I\'m new to Dropbox</string>
+    <string name="fb_signin_advice">Existing account?</string>
+    <string name="fb_signin_text"><u>Tap to signin</u></string>
+    <string name="fb_welcome_text">Welcome to Flipboard</string>
+    <string name="fb_continue_text">Swipe to continue...</string>
+    <string name="form_name_hint">Name</string>
+    <string name="form_email_hint">Email</string>
+    <string name="form_password_hint">Password</string>
+    <string name="btn_form_signup_text">Create account</string>
+    <string name="signin_text">Already a member? Login</string>
+    <string name="error_1_at_least">At least 1 character</string>
+    <string name="error_only_letters">Only letters</string>
+    <string name="error_3_at_least">At least 3 characters</string>
+    <string name="error_bad_format">Bad email format</string>
+    <string name="success">Success!</string>
+    <string name="error_bad_form">Error check the advices and try again!</string>
+</resources>
