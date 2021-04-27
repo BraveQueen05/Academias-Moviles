@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Project</string>
+
+    <string name="created_by_text">Created by</string>
+    <string name="movies_text">Movies</string>
+    <string name="error_loading_img">"Whoops! Falló al cargar la imagen</string>
+</resources>
